@@ -1,16 +1,20 @@
-/*a program to print "_putchar"*/
-#include <stdio.h>
+#include "main.h"
 /**
-*to print "_putchar"
-*
-* return void
+*main - print putchar
+*written by oksberg
+*Return: 0
 */
 
 int main(void)
 {
-	char a = '_putchar'
-
-	putchar(a);
-
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
