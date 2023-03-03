@@ -7,6 +7,7 @@
  * if it contains n or more bytes
  * @src: the string to append
  * @dest: the string to append to
+ * @n: the number of bytes to used
  *
  * Return: pointer to the resulting dest string
  */
