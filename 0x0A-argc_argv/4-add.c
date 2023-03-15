@@ -28,12 +28,11 @@ int main(int argc, char *argv[])
 		{
 			break;
 		}
-		if (!isdigit(*argv[i]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
+			if (!isdigit(*argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		sum = sum + atoi(argv[i]);
 		if (i == (argc - 1))
 		printf("%d\n", sum);
