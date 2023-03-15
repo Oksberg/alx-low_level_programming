@@ -13,9 +13,9 @@
 
 int main(int argc, char *argv[])
 {
-	int sum, i;
-
-	sum = 0;
+	int i = 1;
+	int sum = 0;
+	char *p = argv[i];
 
 	if (argc == 1)
 	{
@@ -24,15 +24,17 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0)
+		while (*p)
+		{
+			if (!(isdigit(*p)))
+				printf("Error\n");
+			return (1);
+		}
+		if (atoi(argv[i]) <= 0)
 		{
 			break;
 		}
-			if (!isdigit(*argv[i]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+		else
 		sum = sum + atoi(argv[i]);
 		if (i == (argc - 1))
 		printf("%d\n", sum);
