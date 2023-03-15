@@ -7,8 +7,6 @@
  * main - Entry point
  * @argc: variable for size of argv
  * @argv: variable for arguments passed into the program
- * @sum: A running addition
- * @i: Integer
  *
  * Return: (0) for success, (1) for Error
  */
@@ -16,6 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int sum, i;
+
 	sum = 0;
 
 	if (argc == 1)
@@ -25,6 +24,10 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
+		if (atoi(argv[i]) == 0)
+		{
+			break;
+		}
 		if (!isdigit(*argv[i]))
 		{
 			printf("Error\n");
