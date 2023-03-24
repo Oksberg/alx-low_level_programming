@@ -6,8 +6,6 @@
  * print_numbers - prints passed numbers
  * @n: number of numbers passed
  * @separator: string that separates the printed numbers
- *
- * Return: (void);
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
