@@ -72,8 +72,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 
-	some_dog->owner = _strcpy(some_dog->owner, owner);
-	some_dog->name = _strcpy(some_dog->name, name);
+	_strcpy(some_dog->owner, owner);
+	_strcpy(some_dog->name, name);
 	some_dog->age = age;
 
 	if (some_dog->owner == NULL || some_dog->name == NULL)
