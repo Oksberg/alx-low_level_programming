@@ -8,7 +8,9 @@ The printf function was used, and it prints "[0] (nil)" if the string part of th
 This function  counts and returns the number of elements in a list_t list using this prototype: size_t list_len(const list_t *h).
 
 ----- Task 2 -----
-
+This function inserts a new node at the beginning of the list.
+It duplicates the string str using strdup and returns the address of the new node.
+It also returns NULL if it fails.
 
 
 ----- Task 3 -----
