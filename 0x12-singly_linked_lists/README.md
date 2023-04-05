@@ -5,7 +5,7 @@ The function returns the number of nodes in the list and uses a predefined forma
 The printf function was used, and it prints "[0] (nil)" if the string part of the data value is NULL.
 
 ----- Task 1 -----
-
+This function  counts and returns the number of elements in a list_t list using this prototype: size_t list_len(const list_t *h).
 
 ----- Task 2 -----
 
