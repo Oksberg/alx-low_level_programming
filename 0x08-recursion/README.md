@@ -22,3 +22,11 @@ This function calculates and returns the factorial of a given number knowing tha
        Task 4
 ------------------
 This function evaluates a number x raised to the power y recursively and returns the value. It also returns -1 if y is negative.
+
+       Task 5
+------------------
+This function returns the natural square root of a number. It returns -1 if the number does not have a natural square root. It uses recursion.
+
+       Task 6
+------------------
+This task creates a recursive function that determines whether or not a number is a prime number.
