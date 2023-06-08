@@ -18,3 +18,7 @@ Printf and puts functions were not used but a created _putchar was used to print
        Task 3
 ------------------
 This function calculates and returns the factorial of a given number knowing that the factorial of 0 is 1. It returns -1 if the given number is negative. Like the other tasks, the recursive method was deployed here.
+
+       Task 4
+------------------
+This function evaluates a number x raised to the power y recursively and returns the value. It also returns -1 if y is negative.
