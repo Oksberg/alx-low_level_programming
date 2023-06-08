@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strlen_recursion - This function counts the length of a string and returns it
+ * _strlen_recursion - This function counts the length of a string
  * @s: The string whose length is to be counted
  *
  * Return: Length of the string
