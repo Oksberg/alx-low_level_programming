@@ -7,13 +7,11 @@ Printf and puts functions were not used but a created _putchar was used to print
 
        Task 1
 ------------------
-
-
-
+This function reverse a string using recursion.
 
        Task 2
 ------------------
-
+This function counts and returns the length of a string using the recursion method.
 
        Task 3
 ------------------
