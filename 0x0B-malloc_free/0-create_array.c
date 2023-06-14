@@ -4,7 +4,7 @@
  * create_array - This function creates n aarray and assign char c
  * @size: The size of the array
  * @c: The char to assign
- * 
+ *
  * Return: The pointer to the arrayon success, NULL on failure
  */
 char *create_array(unsigned int size, char c)
@@ -19,5 +19,4 @@ char *create_array(unsigned int size, char c)
 	for (a = 0; a < size; a++)
 		str[a] = c;
 	return (str);
-}
 
