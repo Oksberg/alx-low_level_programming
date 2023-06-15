@@ -25,11 +25,6 @@ int main(int argc, char *argv[])
 
 	num = atoi(argv[1]);
 
-	if (num < 0)
-	{
-		printf("0\n");
-	}
-
 	for (i = 0; i < 5 && num > 0; i++)
 	{
 		while (num >= coins[i])
