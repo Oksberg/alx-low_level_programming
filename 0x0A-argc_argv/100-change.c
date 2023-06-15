@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - A function that takes arguments from command line
+ * @argc: The number of arguments passed
+ * @argv: The array of arguments passed
+ *
+ * Return: 0
+ */
+
 int main(int argc, char *argv[])
 {
 	int num;
