@@ -47,18 +47,17 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (check_num(argv[1]))
-	{
-		num1 = atoi(argv[1]);
-		count++;
-		num2 = atoi(argv[2]);
-		mul = num1 * num2;
-		printf("%d\n", mul);
-		return (0);
-	}
-	else
+	if (!check_num(argv[1]) || !check_num(argv[2]))
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	num1 = atoi(argv[1]);
+	count++;
+	num2 = atoi(argv[2]);
+	mul = num1 * num2;
+	printf("%d\n", mul);
+
+	return (0);
 }
