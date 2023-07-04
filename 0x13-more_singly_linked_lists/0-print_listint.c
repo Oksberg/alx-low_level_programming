@@ -10,18 +10,14 @@
 
 size_t print_listint(const listint_t *h)
 {
-	size_t elements = 0;
+	int elements = 0;
 
 	while (h != NULL)
 	{
-		/* Checking if the number element of h exists */
-		if ((*h).n != 0)
-		{
-			printf("%d\n", h->n);
-		}
-		elements++;
-		/* Pointing to the next node */
+		printf("%d\n", h->n);
 		h = h->next;
+		elements++;
 	}
+
 	return (elements);
 }
