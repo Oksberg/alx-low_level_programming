@@ -40,13 +40,13 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	for (count = 0; count < len; count++)
+	for (count = 0; b[count] != '\0'; count++)
 	{
 		if ((b[count] != '0') && (b[count] != '1'))
 		{
 			return (0);
 		}
-		dec_num = dec_num + (b[count] - '0') * power(base, (len - count -1));
+		dec_num = dec_num + (b[count] - '0') * power(base, (len - count - 1));
 	}
 	return (dec_num);
 }
