@@ -3,9 +3,9 @@
 
 /** get_bit - Prints the value of a bit at an index
   * @n: The number whose bit at index is to be printed
-  * @index: The position of the bit in the binary representation
+  * @index: The position of the bit
   *
-  * Return: The bit value or -1
+  * Return: Value of the bit or -1
   */
 
 int get_bit(unsigned long int n, unsigned int index)
@@ -20,7 +20,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	bytes = sizeof(unsigned long int);
-	for (i = bytes * 8 -1; i > 0; i--)
+	for (i = bytes * 8 - 1; i > 0; i--)
 	{
 		bit = (n >> i) & 1;
 		if (i == index)
