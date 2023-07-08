@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/** get_bit - Prints the value of a bit at an index
+/**
+  * get_bit - Prints the value of a bit at an index
   * @n: The number whose bit at index is to be printed
   * @index: The position of the bit
   *
