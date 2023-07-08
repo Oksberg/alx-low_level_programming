@@ -19,10 +19,10 @@ void print_binary(unsigned long int n)
 	}
 	for (i = 12; i >= 0; i--)
 	{
-		bit = (n >> i)& 1;
+		bit = (n >> i) & 1;
 		if (bit == 1)
 		{
-			firstone =1;
+			firstone = 1;
 		}
 		if (firstone)
 		{
