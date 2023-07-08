@@ -18,11 +18,11 @@ void print_binary(unsigned long int n)
 	/* Printing 0 when n is 0 */
 	if (n == 0)
 	{
-		printf("0");
+		_putchar('0');
 		return;
 	}
 	/* Iterating and printing the bit values */
-	for (i = bytes * (8 - 1); i >= 0; i--)
+	for (i = bytes * 8 - 1; i >= 0; i--)
 	{
 		bit = (n >> i) & 1;
 		/* Setting condition for ignoring leading zeros */
@@ -32,7 +32,7 @@ void print_binary(unsigned long int n)
 		}
 		if (firstone)
 		{
-			printf("%ld", bit);
+			_putchar(bit + '0');
 		}
 
 	}
