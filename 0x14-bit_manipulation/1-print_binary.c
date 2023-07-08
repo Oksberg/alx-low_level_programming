@@ -10,38 +10,24 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int  byte;
-	int bit, i = 0, j = 0;
-	int realbits = 0, leadingzeros = 1;
+	int i = 0, bit = 0, firstone = 0;
 
-	/* Setting condition for when n is 0 */
 	if (n == 0)
 	{
 		printf("0");
 		return;
 	}
-
-	/* Iterating to get the bytes */
-	for (i = sizeof(int); i >= 0; i--)
+	for (i = 12; i >= 0; i--)
 	{
-		byte = (n >> (i * 8)) & 0xFF;
-		for (j = 7; j >= 0; j--)
+		bit = (n >> i)& 1;
+		if (bit == 1)
 		{
-			/* Iterating to get the bits */
-			bit = (byte >> j) & 1;
-			if (bit)
-				realbits = 1;
-
-			/* Checking for leading zeros */
-			if (realbits)
-			{
-				leadingzeros = 0;
-				printf("%d", bit);
-			}
-			else if (!leadingzeros && j == 0)
-			{
-				printf("0");
-			}
+			firstone =1;
 		}
+		if (firstone)
+		{
+			printf("%d", bit);
+		}
+
 	}
 }
