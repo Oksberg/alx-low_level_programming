@@ -14,13 +14,15 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int i = 0;
 	size_t bytes, bit;
 
-	if (n == 0 || index == 0)
+	if (n == 0 || index >= sizeof(unsigned long int) * 8)
 	{
-		bit = 0;
-		return (bit);
+		return (-1);
 	}
 
 	bytes = sizeof(unsigned long int);
+	if (index == 0)
+		return (0);
+
 	for (i = bytes * 8 - 1; i > 0; i--)
 	{
 		bit = (n >> i) & 1;
