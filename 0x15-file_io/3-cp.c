@@ -48,5 +48,5 @@ int main(int argc, char *argv[])
 	if (fd_to)
 		dprintf(STDERR_FILENO, CLOSE_ERROR, fd_to), exit(100);
 
-	exit (0);
+	exit(0);
 }
