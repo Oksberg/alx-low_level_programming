@@ -21,7 +21,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	bytes = sizeof(unsigned long int);
 	if (index == 0)
-		return (0);
+		return (n & 1);
 
 	for (i = bytes * 8 - 1; i > 0; i--)
 	{
