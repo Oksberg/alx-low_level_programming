@@ -2,7 +2,7 @@
 
 /**
  * key_index - Gives the index of a key
- * @key - The key to evaluate
+ * @key: The key to evaluate
  * @size: Maximum size of the hash table
  *
  * Return: Unsigned long int
