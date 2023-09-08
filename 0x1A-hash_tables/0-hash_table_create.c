@@ -12,6 +12,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int i = 0;
+
 	hash_table_t *hash_table;
 
 	/* Allocation memory for the created hash table */
@@ -35,6 +36,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* Setting all node pointers to NULL */
 	for (; i < size; i++)
 		hash_table->array[i] = NULL;
-
 	return (hash_table);
 }
