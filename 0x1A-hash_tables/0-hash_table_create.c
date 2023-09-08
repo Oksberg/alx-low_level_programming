@@ -20,7 +20,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* Checking if mem alloc was successful */
 	if (hash_table == NULL)
 		return (NULL);
-
 	hash_table->size = size;
 
 	/* Allocating memory to the pointer to nodes of the table */
@@ -35,9 +34,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	/* Setting all node pointers to NULL */
 	for (; i < size; i++)
-	{
 		hash_table->array[i] = NULL;
-	}
 
 	return (hash_table);
 }
