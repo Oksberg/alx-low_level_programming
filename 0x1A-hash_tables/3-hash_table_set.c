@@ -21,6 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = hash_djb2((const unsigned char *)key) % ht->size;
 	current = ht->array[index];
+
 	new_element = malloc(sizeof(hash_node_t));
 	if (new_element == NULL)
 		return (0);
@@ -41,6 +42,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		new_element->next = current;
 		ht->array[index] = new_element;
+		if (strcmp(current->key, key) == 0)
+			new_element->next = current->next;
 		if (current->next != NULL)
 			new_element->next->next = current->next;
 	}
