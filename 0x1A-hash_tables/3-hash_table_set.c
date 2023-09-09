@@ -46,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(current->key, key) == 0)
 		{
 			new_element->next = current;
-			current = current->next;
+			ht->array[index] = new_element;
 		}
 	}
 	return (1);
