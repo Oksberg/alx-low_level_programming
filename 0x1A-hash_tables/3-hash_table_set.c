@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * hast_table_set - Inserts an element to the hash table
+ * hash_table_set - Inserts an element to the hash table
  * @ht: The hash table
  * @key: The key of the element to add
  * @value: The value the key inserts
@@ -12,7 +12,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index ;
+	unsigned long int index;
 	hash_node_t *current;
 	hash_node_t *new_element;
 
@@ -39,7 +39,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	else
 	{
-		while(current->next != NULL)
+		while (current->next != NULL)
 			current = current->next;
 
 		current->next = new_element;
