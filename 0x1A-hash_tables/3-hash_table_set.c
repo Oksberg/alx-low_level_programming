@@ -41,6 +41,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		new_element->next = current;
 		ht->array[index] = new_element;
+		if (current->next != NULL)
+			new_element->next->next = current->next;
 	}
 	return (1);
 }
