@@ -39,15 +39,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	else
 	{
-		while (current->next != NULL)
-			current = current->next;
-
-		current->next = new_element;
-		if (strcmp(current->key, key) == 0)
-		{
-			new_element->next = current;
-			ht->array[index] = new_element;
-		}
+		new_element->next = current;
+		ht->array[index] = new_element;
 	}
 	return (1);
 }
