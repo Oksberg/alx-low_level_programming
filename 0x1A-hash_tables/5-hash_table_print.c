@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * hash_table_set - Inserts an element to the hash table
+ * hash_table_print - Inserts an element to the hash table
  * @ht: The hash table
  *
  * Return: List or NULL
