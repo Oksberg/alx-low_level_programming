@@ -6,13 +6,13 @@
  * hash_table_print - Inserts an element to the hash table
  * @ht: The hash table
  *
- * Return: List or NULL
+ * Return: void
  */
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int index;
 	hash_node_t *current;
-	int first = 1;
+	int printed = 0;
 
 	if (ht == NULL)
 	{
@@ -27,10 +27,9 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (current != NULL)
 		{
-			if (first)
-				first = 0;
-			else
+			if (printed)
 				printf(", ");
+			printed = 1;
 
 			printf("'%s': '%s'", current->key, current->value);
 			current = current->next;
